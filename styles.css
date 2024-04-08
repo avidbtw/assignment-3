@@ -252,7 +252,6 @@ button {
   height: 88.2vh;
   margin: auto; /* Replace the individual margin properties with this */
   position: relative; /* Add this line */
-
   align-items: center;
   padding-left: 30%;
 }
@@ -394,8 +393,8 @@ spen {
 }
 
 .button-design-2 {
-  max-height: 100%;
-  align-content: center;
+  max-height: 100vh;
+
   color: white;
   font-family: Helvetica;
   font-size: 18px;
@@ -406,7 +405,7 @@ spen {
   border: 1px solid #fff;
   height: 10%;
   width: 20%;
-  padding-top: 1.8%;
+  padding-top: 2%;
   padding-bottom: 2%;
   background-color: black;
   display: flex;
