@@ -4,7 +4,6 @@
 }
 #setup {
   background: #000;
-  display: relative;
 }
 
 a {
@@ -81,14 +80,14 @@ h4 {
   transform: translate(1%, -350%);
 }
 nav {
+  width: 95%;
+  max-height: 55vw;
+  margin: auto; /* Replace the individual margin properties with this */
+  position: relative; /* Add this line */
+  align-items: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-top: auto; */
-  /* margin-left: auto; */
-  /* margin-right: 1%; */
-  padding-left: 1%;
-  padding-right: 1%;
   flex-direction: row;
 }
 
@@ -182,7 +181,7 @@ section {
 .img-container img {
   width: auto;
   height: 100%;
-  max-height: 470px;
+  max-height: 430px;
 }
 
 .aboutme {
@@ -210,6 +209,7 @@ section {
   position: relative;
   padding-left: 10%;
   padding-right: 2%;
+  margin-top: -0.1%;
 }
 
 .border4 {
@@ -224,10 +224,12 @@ section {
 .rect1 {
   border: 2px solid white;
   height: 90%;
-  width: auto;
-  max-height: 100vw;
-  margin-top: -2px;
-  margin-bottom: 48px;
+  width: 95%;
+  max-height: 55vw;
+  margin: auto; /* Replace the individual margin properties with this */
+  position: relative; /* Add this line */
+  margin-bottom: 2%;
+  align-items: center;
 }
 
 button {
@@ -245,8 +247,14 @@ button {
 }
 
 #tati {
-  height: 100%;
-  transform: translate(30vw, 0%);
+  max-height: 100%;
+  max-width: ;
+  height: 88.2vh;
+  margin: auto; /* Replace the individual margin properties with this */
+  position: relative; /* Add this line */
+
+  align-items: center;
+  padding-left: 30%;
 }
 
 #tatime {
@@ -268,7 +276,6 @@ spen {
 }
 
 .buttondesign {
-  min-height: 4%;
   max-height: 100%;
   align-content: center;
   color: black;
@@ -279,7 +286,7 @@ spen {
   line-height: normal;
   max-width: 100%;
   border: 1px solid #fff;
-  height: 1.8%;
+  height: 10%;
   width: 20%;
   padding-top: 1.8%;
   padding-bottom: 2%;
@@ -387,7 +394,6 @@ spen {
 }
 
 .button-design-2 {
-  min-height: 4%;
   max-height: 100%;
   align-content: center;
   color: white;
@@ -398,7 +404,7 @@ spen {
   line-height: normal;
   max-width: 100%;
   border: 1px solid #fff;
-  height: 2%;
+  height: 10%;
   width: 20%;
   padding-top: 1.8%;
   padding-bottom: 2%;
@@ -413,4 +419,12 @@ spen {
   color: black;
   background-color: white;
   text-decoration-color: white;
+}
+
+.rect {
+  color: white;
+  height: 100px;
+  width: ;
+  position: absolute;
+  transform: translate(10%, 10%);
 }
