@@ -1,20 +1,31 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
   </head>
-
   <body id="setup">
     <nav class="border">
-      <a href="/portfolio.html">
+      <a class="nav-button" href="/portfolio.html">
         <div>
-          <h3 id="Portfolio">PORTFOLIO</h3>
+          <h3 id="Portfolio1">PORTFOLIO</h3>
         </div>
       </a>
       <a>
         <h1>ILLUMITATI</h1>
       </a>
-      <a href="/aboutme.html">
+      <a class="nav-button" href="/aboutme.html">
         <h3 id="aboutme">ABOUT ME</h3>
       </a>
     </nav>
@@ -25,8 +36,8 @@
 
     <section>
       <div class="border2">
-        <h1>SHOP ME</h1>
-        <button>SHOP NOW</button>
+        <button><h1>SHOP ME</h1></button>
+        <a class="buttondesign">SHOP NOW</a>
       </div>
 
       <section class="img-gallery">
@@ -48,63 +59,76 @@
         </div>
       </section>
       <div class="border2">
-        <h2>PRINTS</h2>
-        <h2>FINE ARTS</h2>
+        <button><h2>PRINTS</h2></button>
+        <button><h2>FINE ARTS</h2></button>
       </div>
       <br />
       <br />
       <br />
       <div class="border2">
-        <h1>FEATURED WORKS</h1>
+        <button><h1>FEATURED WORKS</h1></button>
       </div>
-
-      <section class="img-carosel">
-        <div class="work1">
-          <div class="border3">
-            <img src="public/img/blonde1.jpg" alt="blonde1" id="blonde1" />
-            <div class="boxtext">
-              <h3>Who can you trust</h3>
-              <h2>Me and Myself</h2>
-              <h2>Haylee and Madison</h2>
-            </div>
-          </div>
-        </div>
-
-        <div class="work2">
-          <div class="border3">
-            <img src="public/img/blonde2.jpg" alt="blonde2" id="blonde2" />
-            <div class="boxtext">
-              <h3>A love hate relationship with myself</h3>
-              <h2>Me and Myself</h2>
-              <h2>Haylee and Madison</h2>
-            </div>
-          </div>
-        </div>
-        <div class="work3">
-          <div class="border3">
-            <img src="public/img/twin1.jpg" alt="twin1" id="twin1" />
-            <div class="boxtext">
-              <h3>Who can you trust</h3>
-              <h2>Me and Myself</h2>
-              <h2>Haylee and Madison</h2>
-            </div>
-          </div>
-        </div>
-
-        <div class="work1">
-          <div class="border3">
-            <img src="public/img/twin2.jpg" alt="twin2" id="twin2" />
-            <div class="boxtext">
-              <h3>Who can you trust</h3>
-              <h2>Me and Myself</h2>
-              <h2>Haylee and Madison</h2>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="border4"></div>
-      <div class="border2"></div>
     </section>
+
+    <section class="img-carosel">
+      <div class="slider slider-with-rectangles slider-with-rectangles2">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="public/img/blonde1.jpg" alt="blonde1" id="blonde1" />
+              <div class="boxtext">
+                <h3>Who can you trust</h3>
+                <h2>Me and Myself</h2>
+                <h2>Haylee and Madison</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="public/img/twin1.jpg" alt="twin1" id="twin1" />
+              <div class="boxtext">
+                <h3>Who can you trust</h3>
+                <h2>Me and Myself</h2>
+                <h2>Haylee and Madison</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="public/img/twin2.jpg" alt="twin2" id="twin2" />
+              <div class="boxtext">
+                <h3>Who can you trust</h3>
+                <h2>Me and Myself</h2>
+                <h2>Haylee and Madison</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="public/img/blonde2.jpg" alt="blonde2" id="blonde2" />
+              <div class="boxtext">
+                <h3>A love hate relationship with myself</h3>
+                <h2>Me and Myself</h2>
+                <h2>Haylee and Madison</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <div class="border4"></div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
