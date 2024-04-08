@@ -19,7 +19,7 @@ a {
   margin-top: 4.7%;
   margin-bottom: auto;
   display: block;
-  transform: translate(0%, 0%);
+  transform: translate(0%, -0.5%);
   height: 90%;
 }
 
@@ -107,7 +107,7 @@ nav {
 
 .border2 {
   max-height: 20%;
-  height: 7%;
+  height: 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -279,7 +279,7 @@ spen {
   line-height: normal;
   max-width: 100%;
   border: 1px solid #fff;
-  height: 2%;
+  height: 1.8%;
   width: 20%;
   padding-top: 1.8%;
   padding-bottom: 2%;
