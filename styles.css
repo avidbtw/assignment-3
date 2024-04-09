@@ -2,6 +2,10 @@
   margin-block-start: 0em;
   margin-block-end: 0em;
 }
+
+body{
+  margin:0
+}
 #setup {
   background: #000;
 }
@@ -24,7 +28,7 @@ a {
 
 h1 {
   color: #fff;
-  font-family: HeadLineA;
+  font-family: "HeadLineA";
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -295,6 +299,8 @@ spen {
   justify-content: space-around;
   cursor: pointer;
   left: 0;
+  /* colby added this */
+  transition: background-color 0.2s ease-in;
 }
 
 .buttondesign:hover {
@@ -302,6 +308,12 @@ spen {
   background-color: white;
   text-decoration-color: white;
 }
+
+/* colby added this */
+h5.black{
+  color: black;
+}
+
 .slider {
   width: 90%;
   height: 88%;
