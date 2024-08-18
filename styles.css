@@ -36,10 +36,10 @@ a {
 
 h1 {
   color: #fff;
-  font-family: "HeadLineA";
-  font-size: 40px;
+  font-family: "Helvetica";
+  font-size: 32px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800px;
   line-height: normal;
   letter-spacing: -0.24px;
 }
@@ -47,10 +47,10 @@ h1 {
 h2 {
   color: #fff;
   text-align: left;
-  font-family: "HeadLineA";
-  font-size: 32px;
+  font-family: "Helvetica";
+  font-size: 28px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 800;
   line-height: normal;
   letter-spacing: -0.12px;
 }
@@ -361,6 +361,18 @@ h5.black {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.nav-button:hover {
+  color: black;
+  background-color: white;
+  text-decoration-color: white;
+}
+
+.text2:hover {
+  color: black;
+  background-color: white;
+  text-decoration-color: white;
 }
 
 .slider-with-rectangles::before,
